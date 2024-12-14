@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script> -->
+    <title>Document</title>
+    <style>
+        .md {
+            position: relative;
+            border: 3px solid black;
+            height: 700px;
+            width: 1450px;
+            background-color: rgb(35, 32, 32);
+            border-radius: 20px;
+            box-shadow: 0 0 10px rgba(245, 239, 239, 0.373);
+        }
+
+        .p1 {
+            border: 2px solid black;
+            height: 650px;
+            width: 1400px;
+            margin-left: 50px;
+            margin-top: 15px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(245, 239, 239, 0.215);
+
+        }
+
+        .p2 {
+            position: absolute;
+            border: 1px solid rgb(43, 40, 40);
+            height: 90px;
+            width: 400px;
+            top: -22px;
+            /* left:20px; */
+            background-color: rgb(54, 48, 48);
+            color: white;
+            box-shadow: 0 0 10px rgba(245, 239, 239, 0.189);
+        }
+
+        .p3 {
+            position: absolute;
+            border: 1px solid rgba(69, 62, 62, 0.592);
+            height: 90px;
+            width: 400px;
+            top: 70px;
+            /* left: 50px; */
+            background-color: rgb(54, 48, 48);
+            box-shadow: 0 0 10px rgba(245, 239, 239, 0.189);
+        }
+
+        .p4 {
+            position: absolute;
+            border: 2px solid rgb(47, 38, 38);
+            height: 90px;
+            width: 400px;
+            top: 145px;
+            /* left: 50px; */
+            background-color: rgb(54, 48, 48);
+            box-shadow: 0 0 10px rgba(245, 239, 239, 0.189);
+        }
+
+        .p5 {
+            position: absolute;
+            border: 2px solid rgb(43, 35, 35);
+            height: 90px;
+            width: 400px;
+            top: 230px;
+            /* left: 50px; */
+            background-color: rgb(54, 48, 48);
+            box-shadow: 0 0 10px rgba(245, 239, 239, 0.189);
+        }
+
+        .p6 {
+            position: absolute;
+            border: 2px solid rgb(47, 38, 38);
+            height: 90px;
+            width: 400px;
+            top: 320px;
+            /* left: 50px; */
+            background-color: rgb(54, 48, 48);
+            box-shadow: 0 0 10px rgba(245, 239, 239, 0.189);
+        }
+
+        .p7 {
+            position: absolute;
+            border: 2px solid rgb(31, 27, 27);
+            height: 90px;
+            width: 400px;
+            top: 412px;
+            /* left: 50px; */
+            background-color: rgb(54, 48, 48);
+            box-shadow: 0 0 10px rgba(245, 239, 239, 0.189);
+        }
+
+        .p8 {
+            position: absolute;
+            border: 2px solid rgb(44, 36, 36);
+            height: 90px;
+            width: 400px;
+            top: 500px;
+            /* left: 50px; */
+            background-color: rgb(54, 48, 48);
+            box-shadow: 0 0 10px rgba(245, 239, 239, 0.373);
+        }
+
+        .p9 {
+            position: absolute;
+            border: 2px soild rgb(31, 27, 27);
+            height: 101px;
+            width: 400px;
+            /* left: 50px; */
+            top: 595px;
+            background-color: rgb(54, 48, 48);
+            box-shadow: 0 0 10px rgba(245, 239, 239, 0.373);
+        }
+
+        .p10 {
+            position: absolute;
+            border: 2px soild rgb(31, 27, 27);
+            height: 101px;
+            width: 400px;
+            /* left: 50px; */
+            top: 698px;
+            background-color: rgb(54, 48, 48);
+            box-shadow: 0 0 10px rgba(245, 239, 239, 0.373);
+        }
+
+        .p11 {
+            position: absolute;
+            border: 2px soild rgb(31, 27, 27);
+            height: 101px;
+            width: 400px;
+            /* left: 50px; */
+            top: 800px;
+            background-color: rgb(54, 48, 48);
+            box-shadow: 0 0 10px rgba(245, 239, 239, 0.373);
+        }
+
+        .p12 {
+            position: absolute;
+            border: 1px solid rgba(69, 62, 62, 0.592);
+            height: 90px;
+            width: 400px;
+            top: 800px;
+            /* left: 50px; */
+            background-color: rgb(54, 48, 48);
+            box-shadow: 0 0 10px rgba(245, 239, 239, 0.189);
+        }
+
+        .p13 {
+            position: absolute;
+            border: 1px solid rgba(69, 62, 62, 0.592);
+            height: 90px;
+            width: 400px;
+            top: 890px;
+            /* left: 50px; */
+            background-color: rgb(54, 48, 48);
+            box-shadow: 0 0 10px rgba(245, 239, 239, 0.189);
+        }
+
+        .p14 {
+            position: absolute;
+            border: 1px solid rgba(69, 62, 62, 0.592);
+            height: 90px;
+            width: 400px;
+            top: 985px;
+            /* left: 50px; */
+            background-color: rgb(54, 48, 48);
+            box-shadow: 0 0 10px rgba(245, 239, 239, 0.189);
+        }
+
+        .n1 {
+            border: 2px solid rgb(44, 38, 38);
+            height: 70px;
+            width: 999px;
+            margin-top: -673px;
+            margin-left: 420px;
+            background-color: rgb(54, 48, 48);
+            color: white;
+
+        }
+
+        .img {
+            position: absolute;
+            height: 65px;
+            width: 65px;
+            border-radius: 64px;
+            margin-left: -37px;
+            top: 2px;
+
+        }
+
+        .s1 {
+            border: 2px solid rgb(44, 35, 35);
+            height: 50px;
+            width: 999px;
+            margin-left: 450px;
+            margin-top: -50px;
+            background-color: rgb(54, 48, 48);
+        }
+
+        
+
+
+
+        h2 {
+            position: relative;
+            left: 30px;
+        }
+
+        .img3 {
+            position: absolute;
+            height: 20px;
+            width: 20px;
+            border-radius: 50px;
+            top: 10px;
+            /* left: 30px; */
+            margin-left: 30px;
+
+        }
+
+
+        .dp {
+            position: absolute;
+            height: 50px;
+            width: 50px;
+            border-radius: 50px;
+            left: 20px;
+            top: 20px;
+            box-shadow: 0 0 10px rgba(245, 239, 239, 0.226);
+
+        }
+
+        img[class=img] {
+            position: relative;
+            left: 50px;
+        }
+
+        .title {
+            position: relative;
+            left: 50px;
+        }
+
+        .chat-input {
+            display: flex;
+            padding: 10px;
+            background-color: rgb(54, 48, 48);
+            border-top: 1px solid #ddd;
+            margin-top: -100px;
+            width: 979px;
+            margin-left: 456px;
+            border-radius: 10px;
+            margin-top: -70px;
+        }
+
+        .chat-input input {
+            flex: 1;
+            padding: 10px;
+            border-radius: 20px;
+            border: 1px solid #282626;
+            outline: none;
+            background-color: rgb(54, 48, 48);
+        }
+
+        .chat-input button {
+            background-color: #075e54;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            margin-left: 10px;
+            border-radius: 20px;
+            cursor: pointer;
+        }
+
+        .search-bar {
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+            width: 280px;
+            margin-left: 40px;
+            margin-top: -10px;
+            height: 30px;
+
+        }
+
+        .search-bar input {
+            width: 100%;
+            padding: 10px;
+            border-radius: 10px;
+            border: 1px solid rgb(209, 201, 201);
+            background-color: rgb(54, 48, 48);
+            outline: none;
+        }
+
+        .md2 {
+            position: relative;
+            /* border: 1px solid black; */
+            height: 645px;
+            width: 400px;
+            margin-top: -89px;
+            margin-left: 48px;
+            overflow-y: scroll;
+        }
+
+        
+        /* .h3{
+            position: absolute;
+            border: 1px solid black;
+            color: #ddd;
+            margin-top: 400px;
+            background-color: aqua;
+        }  */
+        .mom {
+            text-decoration: none;
+            position: relative;
+            left: 88px;
+            top: 85px;
+            color: #f3ebeb;
+            font-size: 20px;
+
+        }
+
+        .name1 {
+            position: relative;
+            top: 70px;
+            left: 88px;
+            color: #beb9b9
+                /* font-size:1px; */
+        }
+
+        ._name2 {
+            text-decoration: none;
+            position: relative;
+            left: 88px;
+            top: 80px;
+            color: #f5e3e3;
+            font-size: 20px;
+        }
+
+        .name2 {
+            position: relative;
+            top: 67px;
+            left: 88px;
+            color: #989292;
+        }
+
+        ._name3 {
+            text-decoration: none;
+            position: relative;
+            left: 88px;
+            top: 85px;
+            color: #f5e3e3;
+            font-size: 20px;
+        }
+
+        .name3 {
+            position: relative;
+            top: 77px;
+            left: 88px;
+            color: #beb9b9;
+        }
+
+        .r11 {
+            text-decoration: none;
+            position: relative;
+            left: 88px;
+            top: -75px;
+            color: #f5e3e3;
+            font-size: 20px;
+        }
+
+        ._name4 {
+            text-decoration: none;
+            position: relative;
+            left: 88px;
+            top: 90px;
+            color: #f5e3e3;
+            font-size: 20px;
+        }
+
+        .name4 {
+            position: relative;
+            top: 80px;
+            left: 88px;
+            color: #beb9b9;
+        }
+
+        ._name5 {
+            text-decoration: none;
+            position: relative;
+            left: 88px;
+            top: 100px;
+            color: #f5e3e3;
+            font-size: 20px;
+        }
+
+        .name5 {
+            position: relative;
+            top: 90px;
+            left: 88px;
+            color: #beb9b9;
+        }
+
+        ._name6 {
+            text-decoration: none;
+            position: relative;
+            left: 88px;
+            top: 110px;
+            color: #f5e3e3;
+            font-size: 20px;
+        }
+
+        .name6 {
+            position: relative;
+            top: 95px;
+            left: 88px;
+            color: #beb9b9;
+        }
+
+        ._name7 {
+            text-decoration: none;
+            position: relative;
+            left: 88px;
+            top: 130px;
+            color: #f5e3e3;
+            font-size: 20px;
+        }
+
+        .name7 {
+            position: relative;
+            top: 120px;
+            left: 88px;
+            color: #beb9b9;
+        }
+
+        ._name8 {
+            text-decoration: none;
+            position: relative;
+            left: 88px;
+            top: 150px;
+            color: #f5e3e3;
+            font-size: 20px;
+        }
+
+        .name8 {
+            position: relative;
+            top: 140px;
+            left: 88px;
+            color: #beb9b9;
+        }
+
+        ._name9 {
+            text-decoration: none;
+            position: relative;
+            left: 88px;
+            top: 170px;
+            color: #f5e3e3;
+            font-size: 20px;
+        }
+
+        .name9 {
+            position: relative;
+            top: 160px;
+            left: 88px;
+            color: #beb9b9;
+        }
+
+    .m1{
+        position: relative;
+        left: 470px;
+        top: -570px;
+        height: 500px;
+        width: 900px;
+    }
+    /* a:hover{
+        color: green;
+    } */
+    a{
+        color: white;
+        text-decoration: none;
+    }
+        
+    </style>
+</head>
+
+<body>
+    <div class="md">
+        <i class="fa fa-whatsapp" style="font-size:36px;color:rgb(6, 151, 28);margin-left: 10px;">Whatsapp</i>
+        <p class="p1">
+        
+        </p>
+        <h2 class="n1"><img class="img" title="img" src="./dp.jpg" />
+            <p class="r11">Mummy</p>
+            <!-- <i style='font-size:24px' class='fas'>&#xf03d;</i> -->
+        </h2>
+        <div class="md2">
+            <h1 class="p2">chats
+                <div class="search-bar">
+                    <input type="text" placeholder="Search or start new chat">
+                </div>
+            </h1>
+            <!-- <div class="md2"> -->
+            <p class="p3">
+                <img class="dp" src="./dp.jpg" />
+            <p class="mom"><a  target="sowm" href="./chat.html">Mummy</a></p>
+            <p class="name1">typing....</p>
+            </a>
+            </p>
+            <p class="p4">
+                <img class="dp" src="./dp.jpg" />
+            <p class="_name2"><a target="sowm" href="./chat.html"> Kuttiiii</a> </p>
+            <p class="name2">ha..</p>
+            </p>
+            <p class="p5">
+                <img class="dp" src="./anime2g.jpg" />
+            <p class="_name3"><a target="sowm" href="./chat.html">Bhargavi</a></p>
+            <p class="name3">typing...</p>
+            </p>
+            <p class="p6">
+                <img class="dp" src="./anime1.jpg" />
+            <p class="_name4">chinni</p>
+            <p class="name4">hi.....</p>
+            </p>
+            <p class="p7">
+                <img class="dp" src="./10kcoders.png" />
+            <p class="_name5">11R 10000CODERS-OFFLINE</p>
+            <p class="name5">kutti typing.......</p>
+            </p>
+            <p class="p8">
+                <img class="dp" src="./dp1.jpg" />
+            <p class="_name6">Daddy</p>
+            <p class="name6">.....</p>
+            </p>
+            <p class="p9">
+                <img class="dp" src="./dp.jpg" />
+            <p class="_name7">jessi</p>
+            <p class="name7">.....</p>
+            </p>
+            <p class="p10">
+                <img class="dp" src="./dp.jpg" />
+            <p class="_name8">priya</p>
+            <p class="name8">.....</p>
+            </p>
+            <p class="p11">
+                <img class="dp" src="./aleezadp.jpg" />
+            <p class="_name9">Aleeza</p>
+            <p class="name9">.....</p>
+            </p>
+            <!-- <p class="p12">
+            <img class="dp" src="./dp.jpg" /><p class="_name10"></p>
+            <p class="name10">.....</p> 
+        </p>
+        <p class="p13">
+            <img class="dp" src="./dp.jpg" /><p class="_name11">Name</p>
+            <p class="name11">.....</p> 
+        </p> -->
+            <!-- <p class="p14">
+            <img class="dp" src="./dp.jpg" /><p class="_name10">Aleeza</p>
+            <p class="name12">.....</p> 
+        </p> -->
+        </div>
+        <p class="s1">
+        <div class="chat-input">
+            <input type="text" placeholder="Type a message">
+            <button>Send</button>
+        </div>
+
+        </p>
+        </div>
+        <iframe class="m1" name="sowm"></iframe>
+
+
+    </body>
+
+    </html>
